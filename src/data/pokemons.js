@@ -15,6 +15,8 @@ const pokemons = Array.from({ length: 25 }, (_, i) => {
         habilities: ['Espesura', 'Clorofila'],
         evolution: [2, 3],
         discovered: true,
+        gender: ["male", "female"],
+        favorito:true,
       };
     case 2:
       return {
@@ -30,6 +32,8 @@ const pokemons = Array.from({ length: 25 }, (_, i) => {
         habilities: ['Espesura', 'Clorofila'],
         evolution: [1, 3],
         discovered: true,
+        gender: ["male", "female"],
+        favorito:false,
       };
     case 4:
       return {
@@ -45,6 +49,8 @@ const pokemons = Array.from({ length: 25 }, (_, i) => {
         habilities: ['Mar Llamas', 'Poder solar'],
         evolution: [5, 6],
         discovered: true,
+        gender: ["male", "female"],
+        favorito:true,
       };
     case 5:
       return {
@@ -60,6 +66,8 @@ const pokemons = Array.from({ length: 25 }, (_, i) => {
         habilities: ['Mar Llamas', 'Poder solar'],
         evolution: [4, 6],
         discovered: true,
+        gender: ["male", "female"],
+        favorito:false,
       };
     case 7:
       return {
@@ -75,6 +83,8 @@ const pokemons = Array.from({ length: 25 }, (_, i) => {
         habilities: ['Torrente', 'Cura lluvia'],
         evolution: [8, 9],
         discovered: true,
+        gender: ["male", "female"],
+        favorito:false,
       };
     default:
       return {
@@ -83,6 +93,8 @@ const pokemons = Array.from({ length: 25 }, (_, i) => {
         type: [],
         sprite: null,
         discovered: false,
+        gender: [],
+
       };
   }
 });

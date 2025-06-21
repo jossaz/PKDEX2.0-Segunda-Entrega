@@ -1,3 +1,48 @@
+# Pokédex 2.0
+
+## Integrantes
+
+- Tomás Gómez Cardona - togomezc@unal.edu.co
+- Julian Camilo Ossa Zapata - jossaz@unal.edu.co
+- Daniel Bermudez Aranguren - dbermudeza@unal.edu.co
+- Sebastian Ocampo Galvis - seocampog@unal.edu.co
+
+
+Este proyecto es una Pokédex web desarrollada en React. Permite explorar, buscar, filtrar y ver detalles de Pokémon en dos modos de visualización: clásica y general.
+
+## Requisitos
+
+- Node.js (v16 o superior recomendado)
+- npm (v8 o superior recomendado)
+
+## Instalación
+
+1. Clona el repositorio:
+   ```bash
+   git clone <URL-del-repositorio>
+   cd PKDEX2.0-Segunda-Entrega
+
+2. Instala las dependencias:
+    npm install
+
+3. Si los íconos de Material UI no se ven correctamente, instala también:
+    npm install @mui/icons-material @mui/material @emotion/react @emotion/styled
+
+## Comandos útiles
+
+    -Iniciar la aplicación en modo desarrollo:
+        npm start   
+        Abre http://localhost:3000 en tu navegador.
+
+    Construir la aplicación para producción:
+        npm run build
+
+## Estructura principal
+    pages — Vistas principales (GeneralView, ClassicView, PokemonDetail, etc.)
+    components — Componentes reutilizables (Header, SearchBar, MobileMenu, etc.)
+    data — Datos de Pokémon y usuarios
+    context — Contextos globales (por ejemplo, AuthContext)
+    assets — Imágenes y recursos estáticos
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

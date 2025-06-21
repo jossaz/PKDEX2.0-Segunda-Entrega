@@ -1,0 +1,43 @@
+.view-type-bar {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 2vw);
+  margin: 0 1vw;
+  padding: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #E2ECEC;
+}
+
+.view-type-btn {
+  flex: 1 1 50%;
+  height: 28px;
+  border: none;
+  background: transparent;
+  color: #cb3f41;
+  font-weight: bold;
+  font-size: 0.95rem; /* más pequeño cuando NO está activo */
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, height 0.2s, font-size 0.2s;
+  outline: none;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-type-btn.active {
+  background: #CBD5D5;
+  color: #cb3f41;
+  height: 36px;
+  font-size: 1.25rem; /* más grande cuando está activo */
+  z-index: 1;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  border-radius: 0 0 8px 8px;
+}
+
+.view-type-btn:first-child,
+.view-type-btn:last-child {
+  border: none;
+}

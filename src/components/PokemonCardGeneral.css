@@ -1,0 +1,83 @@
+.pokemon-card-regular {
+  background: #FF5656;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.10);
+  border: 2px solid #e53935;
+  padding: 18px 20px 14px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+}
+
+.pokemon-card-regular:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(44, 62, 80, 0.18);
+}
+
+.pokemon-card-regular .poke-img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  margin-bottom: 10px;
+}
+
+.pokemon-card-regular .poke-number {
+  font-size: 18px;
+  color: #e53935;
+  font-weight: bold;
+  background: #ffeaea;
+  border-radius: 8px;
+  padding: 2px 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin-bottom: 0;
+  z-index: 2;
+}
+
+.pokemon-card-regular .poke-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background: #21273E;
+  border-radius: 10px;
+  padding: 6px 0;
+  width: 100%;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+  text-align: center;
+  box-shadow: 0 2px 8px #0001;
+  letter-spacing: 1px;
+}
+
+.pokemon-card-regular .poke-types {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.pokemon-card-regular .poke-type {
+  font-size: 16px;
+  font-weight: 500;  
+  color: #fff;
+  border-radius: 8px;
+  padding: 3px 12px;
+  text-shadow: 1px 1px 2px #00000033;
+  text-transform: capitalize;
+  box-shadow: 0 1px 2px #0001;
+  margin-bottom: 2px;
+}
+
+.pokemon-card-regular .poke-type.Planta { background: #4caf50; }
+.pokemon-card-regular .poke-type.Fuego { background: #ff9800; }
+.pokemon-card-regular .poke-type.Agua { background: #2196f3; }
+.pokemon-card-regular .poke-type.Veneno { background: #9c27b0; }

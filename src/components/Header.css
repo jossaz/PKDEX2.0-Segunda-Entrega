@@ -1,0 +1,148 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #CB3F41;
+  color: white;
+  padding: 0.4rem 0.5rem; /* Mucho menos padding vertical y horizontal */
+  box-shadow: inset 0 -6px 12px rgba(0,0,0,0.3);
+  outline: 3px solid black;
+  outline-offset: -3px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 10;
+}
+.login-link {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.header-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 36px; /* Más pequeño */
+  width: auto;
+  padding: 0; /* Sin padding extra */
+  margin: 0;
+}
+
+.header-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.title {
+  font-size: 1.6rem; /* Más pequeño */
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.header-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.3rem; /* Menos espacio entre elementos */
+  padding: 0;
+}
+
+.icon-button.logout {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-button.logout img,
+.icon-button.logout svg {
+  width: 20px;
+  height: 20px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  background: #FCF5E5;
+  padding: 2px;
+  box-sizing: border-box;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+  padding: 0;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.pokedex-info {
+  font-size: 0.85rem;
+  color: #ffe082;
+}
+
+.user-name,
+.pokedex-info {
+  margin: 0;
+  padding: 0;
+}
+.pokemon-count {
+  font-weight: bold;
+  color: #fff;
+}
+.header-menu {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .header-left {
+    display: none;
+  }
+  .header-right {
+    display: none;
+  }
+  .header-center {
+    flex: 1;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .header-center::before {
+    content: "";
+    display: inline-block;
+    background-image: url('../assets/profile.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+  }
+  .header-menu {
+    display: flex;
+    flex: unset;
+    justify-content: flex-end;
+    width: auto;
+    margin-left: auto;
+  }
+}
